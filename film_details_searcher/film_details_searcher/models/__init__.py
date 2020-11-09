@@ -1,0 +1,1 @@
+from film_details_searcher.models import film_details, search_result, select_menu
