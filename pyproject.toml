@@ -1,0 +1,12 @@
+[tool]
+[tool.poetry]
+authors = ["Tomasz Kyc <tomasz.kyc@outlook.com>"]
+version = "1.1"
+description = "Python command-line application to search for movie details"
+name = "film_details_searcher"
+[tool.poetry.dependencies]
+bs4 = "0.0.1"
+pytest = "6.1.2"
+pytest-cov = "2.10.1"
+python = "^3.8"
+requests = "2.25.0"

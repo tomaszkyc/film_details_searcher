@@ -6,6 +6,14 @@ It use a polish movie online website [Filmweb](https://filmweb.pl) and [Google](
 
 Designed for people who don't want to open web browser and search for film description.
 
+**Live demo**
+---
+You can go to [this page](https://repl.it/@tomson12345/filmdetailssearcher) and check the app without 
+need to install on your computer. After that **click "Play" button** enclosed in a green frame on
+the picture **and wait about a minute**.
+
+![](resources/images/live-run-1.png)
+
 **Libraries used**
 ---
 1. [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - Python web scrapping library
