@@ -130,3 +130,6 @@ dmypy.json
 
 # PyCharm dir
 .idea
+
+# virtual env
+venv

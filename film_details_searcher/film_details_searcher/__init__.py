@@ -1,2 +1,2 @@
-from film_details_searcher.scrappers import google_scraper, filmweb_scraper
+import film_details_searcher.scrappers
 import film_details_searcher.models

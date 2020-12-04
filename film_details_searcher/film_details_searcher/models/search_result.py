@@ -1,23 +1,24 @@
+from dataclasses import dataclass
+
+
+@dataclass(init=True, repr=True, eq=True, frozen=True)
 class SearchResult:
-
-    def __init__(self, title, link):
-        self._title = self._parse_title(title)
-        self._link = link
-
-    def __str__(self):
-        return f"Page title: {self.title} page link: {self.link}"
-
-    @property
-    def title(self):
-        return self._title
-
-    @property
-    def link(self):
-        return self._link
+    details: dict
 
     @classmethod
     def parse(cls, title, link):
-        return cls(title, link)
+        if not isinstance(title, str) or not isinstance(link, str):
+            raise TypeError('Link and title should be str type')
+        title = SearchResult._parse_title(title)
+        attr = {"title": title, "link": link}
+        return cls(attr)
 
-    def _parse_title(self, title):
+    def link(self):
+        return self.details['link']
+
+    def title(self):
+        return self.details['title']
+
+    @staticmethod
+    def _parse_title(title):
         return title.replace(' - Filmweb', '')
